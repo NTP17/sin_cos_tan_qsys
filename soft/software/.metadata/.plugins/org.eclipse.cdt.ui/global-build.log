@@ -1,0 +1,1004 @@
+13:02:09 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:02:19 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:02:22 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:12:10: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   printf("%f\n", IORD_ALTERA_AVALON_PIO_DATA(SIN_HW_BASE));
+          ^
+hello_world.c:12:10: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+hello_world.c:13:10: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   printf("%f\n", IORD_ALTERA_AVALON_PIO_DATA(COS_HW_BASE));
+          ^
+hello_world.c:13:10: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+hello_world.c:14:10: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+   printf("%f\n", IORD_ALTERA_AVALON_PIO_DATA(TAN_HW_BASE));
+          ^
+hello_world.c:14:10: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:03:10 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:03:15 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:06:02 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+Command canceled
+13:06:09 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:06:14 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:8:9: warning: unused variable 'pi' [-Wunused-variable]
+   float pi = 3.14159265358979323846;
+         ^
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:13:48 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:13:59 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 69 KBytes program size (code + initialized data).
+Info:              123 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:17:33 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:17:37 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:8:9: warning: unused variable 'pi' [-Wunused-variable]
+   float pi = 3.14159265358979323846;
+         ^
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:31:40 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:31:44 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:9:9: warning: unused variable 'pi' [-Wunused-variable]
+   float pi = 3.14159265358979323846;
+         ^
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:32:52 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:32:56 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:9:9: warning: unused variable 'pi' [-Wunused-variable]
+   float pi = 3.14159265358979323846;
+         ^
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:34:00 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:34:03 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:9:9: warning: unused variable 'pi' [-Wunused-variable]
+   float pi = 3.14159265358979323846;
+         ^
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:36:15 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:36:21 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:9:9: warning: unused variable 'pi' [-Wunused-variable]
+   float pi = 3.14159265358979323846;
+         ^
+hello_world.c:8:7: warning: unused variable 'i' [-Wunused-variable]
+   int i;
+       ^
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:58:26 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:58:30 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:05:34 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:05:38 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:06:54 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:06:57 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:09:00 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:09:04 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:11:39 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:11:44 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:9:7: warning: unused variable 'pie' [-Wunused-variable]
+   int pie = *(int*)&pi;
+       ^
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:13:20 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:13:24 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:9:7: warning: unused variable 'pie' [-Wunused-variable]
+   int pie = *(int*)&pi;
+       ^
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:14:16 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:14:21 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:9:7: warning: unused variable 'pie' [-Wunused-variable]
+   int pie = *(int*)&pi;
+       ^
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:19:36 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:19:40 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:20:27 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:20:31 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:29:29 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:29:33 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:13:3: error: unknown type name 'ufloat'
+   ufloat x,y;
+   ^
+hello_world.c:14:4: error: request for member 'f' in something not a structure or union
+   x.f = 3.14159265358979323846;
+    ^
+In file included from ../FINALE_bsp//drivers/inc/altera_avalon_pio_regs.h:34:0,
+                 from hello_world.c:3:
+hello_world.c:15:45: error: request for member 'u' in something not a structure or union
+   IOWR_ALTERA_AVALON_PIO_DATA(COS_HW_BASE, x.u);
+                                             ^
+../FINALE_bsp//HAL/inc/io.h:75:66: note: in definition of macro 'IOWR'
+   __builtin_stwio (__IO_CALC_ADDRESS_NATIVE ((BASE), (REGNUM)), (DATA))
+                                                                  ^
+hello_world.c:15:3: note: in expansion of macro 'IOWR_ALTERA_AVALON_PIO_DATA'
+   IOWR_ALTERA_AVALON_PIO_DATA(COS_HW_BASE, x.u);
+   ^
+hello_world.c:16:4: error: request for member 'u' in something not a structure or union
+   y.u = IORD_ALTERA_AVALON_PIO_DATA(COS_HW_BASE);
+    ^
+hello_world.c:17:17: error: request for member 'f' in something not a structure or union
+   printf("%f", y.f);
+                 ^
+hello_world.c:13:12: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+   ufloat x,y;
+            ^
+hello_world.c:13:10: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   ufloat x,y;
+          ^
+make: *** [obj/default/hello_world.o] Error 1
+14:30:11 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:13:3: error: unknown type name 'ufloat'
+   ufloat x,y;
+   ^
+hello_world.c:14:4: error: request for member 'f' in something not a structure or union
+   x.f = 3.14159265358979323846;
+    ^
+In file included from ../FINALE_bsp//drivers/inc/altera_avalon_pio_regs.h:34:0,
+                 from hello_world.c:3:
+hello_world.c:15:45: error: request for member 'u' in something not a structure or union
+   IOWR_ALTERA_AVALON_PIO_DATA(COS_HW_BASE, x.u);
+                                             ^
+../FINALE_bsp//HAL/inc/io.h:75:66: note: in definition of macro 'IOWR'
+   __builtin_stwio (__IO_CALC_ADDRESS_NATIVE ((BASE), (REGNUM)), (DATA))
+                                                                  ^
+hello_world.c:15:3: note: in expansion of macro 'IOWR_ALTERA_AVALON_PIO_DATA'
+   IOWR_ALTERA_AVALON_PIO_DATA(COS_HW_BASE, x.u);
+   ^
+hello_world.c:16:4: error: request for member 'u' in something not a structure or union
+   y.u = IORD_ALTERA_AVALON_PIO_DATA(COS_HW_BASE);
+    ^
+hello_world.c:17:17: error: request for member 'f' in something not a structure or union
+   printf("%f", y.f);
+                 ^
+hello_world.c:13:12: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+   ufloat x,y;
+            ^
+hello_world.c:13:10: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   ufloat x,y;
+          ^
+make: *** [obj/default/hello_world.o] Error 1
+14:30:15 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:13:3: error: unknown type name 'ufloat'
+   ufloat x,y;
+   ^
+hello_world.c:14:4: error: request for member 'f' in something not a structure or union
+   x.f = 3.14159265358979323846f;
+    ^
+In file included from ../FINALE_bsp//drivers/inc/altera_avalon_pio_regs.h:34:0,
+                 from hello_world.c:3:
+hello_world.c:15:45: error: request for member 'u' in something not a structure or union
+   IOWR_ALTERA_AVALON_PIO_DATA(COS_HW_BASE, x.u);
+                                             ^
+../FINALE_bsp//HAL/inc/io.h:75:66: note: in definition of macro 'IOWR'
+   __builtin_stwio (__IO_CALC_ADDRESS_NATIVE ((BASE), (REGNUM)), (DATA))
+                                                                  ^
+hello_world.c:15:3: note: in expansion of macro 'IOWR_ALTERA_AVALON_PIO_DATA'
+   IOWR_ALTERA_AVALON_PIO_DATA(COS_HW_BASE, x.u);
+   ^
+hello_world.c:16:4: error: request for member 'u' in something not a structure or union
+   y.u = IORD_ALTERA_AVALON_PIO_DATA(COS_HW_BASE);
+    ^
+hello_world.c:17:17: error: request for member 'f' in something not a structure or union
+   printf("%f", y.f);
+                 ^
+hello_world.c:13:12: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+   ufloat x,y;
+            ^
+hello_world.c:13:10: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   ufloat x,y;
+          ^
+make: *** [obj/default/hello_world.o] Error 1
+14:34:15 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:13:3: error: unknown type name 'ufloat'
+   ufloat x,y;
+   ^
+hello_world.c:14:4: error: request for member 'f' in something not a structure or union
+   x.f = 3.14159265358979323846f;
+    ^
+In file included from ../FINALE_bsp//drivers/inc/altera_avalon_pio_regs.h:34:0,
+                 from hello_world.c:3:
+hello_world.c:15:45: error: request for member 'u' in something not a structure or union
+   IOWR_ALTERA_AVALON_PIO_DATA(COS_HW_BASE, x.u);
+                                             ^
+../FINALE_bsp//HAL/inc/io.h:75:66: note: in definition of macro 'IOWR'
+   __builtin_stwio (__IO_CALC_ADDRESS_NATIVE ((BASE), (REGNUM)), (DATA))
+                                                                  ^
+hello_world.c:15:3: note: in expansion of macro 'IOWR_ALTERA_AVALON_PIO_DATA'
+   IOWR_ALTERA_AVALON_PIO_DATA(COS_HW_BASE, x.u);
+   ^
+hello_world.c:16:4: error: request for member 'u' in something not a structure or union
+   y.u = IORD_ALTERA_AVALON_PIO_DATA(COS_HW_BASE);
+    ^
+hello_world.c:17:17: error: request for member 'f' in something not a structure or union
+   printf("%f", y.f);
+                 ^
+hello_world.c:13:12: warning: variable 'y' set but not used [-Wunused-but-set-variable]
+   ufloat x,y;
+            ^
+hello_world.c:13:10: warning: variable 'x' set but not used [-Wunused-but-set-variable]
+   ufloat x,y;
+          ^
+make: *** [obj/default/hello_world.o] Error 1
+14:34:20 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:36:38 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:36:42 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:47:46 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:47:50 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:49:58 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:50:05 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:50:58 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:51:02 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:52:08 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:52:19 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:52:22 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:54:04 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:54:08 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:58:51 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:58:55 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+15:00:06 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+15:00:10 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+15:00:41 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+15:00:44 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+15:15:14 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+15:15:35 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+11:38:54 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+11:39:16 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+11:41:09 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+11:41:13 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 68 KBytes program size (code + initialized data).
+Info:              124 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+11:44:32 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+11:44:36 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 105 KBytes program size (code + initialized data).
+Info:              88 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:37:23 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:37:30 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 105 KBytes program size (code + initialized data).
+Info:              88 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:41:54 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:42:00 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 105 KBytes program size (code + initialized data).
+Info:              88 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+13:44:53 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:44:56 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:41:04 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:41:12 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 105 KBytes program size (code + initialized data).
+Info:              88 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:52:55 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:53:12 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../FINALE_bsp//HAL/inc -I../FINALE_bsp/ -I../FINALE_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking FINALE.elf
+nios2-elf-g++  -T'../FINALE_bsp//linker.x' -msys-crt0='../FINALE_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../FINALE_bsp/   -Wl,-Map=FINALE.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o FINALE.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert FINALE.elf --thread_model hal --cpu_name CPU --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name firmware --quartus_project_dir "C:/intelFPGA_lite/GET_OVER_HERE/soft" --sopcinfo C:/intelFPGA_lite/GET_OVER_HERE/soft/software/FINALE_bsp/../../firmware.sopcinfo
+Info: (FINALE.elf) 105 KBytes program size (code + initialized data).
+Info:              88 KBytes free for stack + heap.
+Info: Creating FINALE.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source FINALE.elf >FINALE.objdump
+[FINALE build complete]
+14:56:59 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+14:57:03 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:50:48 **** Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]
+13:51:11 **** Incremental Build of configuration Nios II for project FINALE ****
+make all 
+Info: Building ../FINALE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../FINALE_bsp/
+[BSP build complete]
+[FINALE build complete]

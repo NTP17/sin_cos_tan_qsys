@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=C\:\\intelFPGA_lite\\GET_OVER_HERE\\soft\\software\\FINALE
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\intelFPGA_lite\\GET_OVER_HERE\\soft\\firmware.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\intelFPGA_lite\\GET_OVER_HERE\\soft\\software\\FINALE_bsp

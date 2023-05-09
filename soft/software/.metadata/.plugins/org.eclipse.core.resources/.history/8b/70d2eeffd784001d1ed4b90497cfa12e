@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <system.h>
+#include <altera_avalon_pio_regs.h>
+#include <unistd.h>
+
+#define PI 3.14159265358979
+
+union ufloat {
+  float f;
+  unsigned u;
+};
+
+int main()
+{
+  union ufloat x;
+  x.f = PI;
+
+  IOWR_ALTERA_AVALON_PIO_DATA(SIN_HW_BASE, x.u);
+  IOWR_ALTERA_AVALON_PIO_DATA(COS_HW_BASE, x.u);
+  IOWR_ALTERA_AVALON_PIO_DATA(TAN_HW_BASE, x.u);
+
+  x.u = IORD_ALTERA_AVALON_PIO_DATA(SIN_HW_BASE);
+  printf("%f\n", x.f);
+  x.u = IORD_ALTERA_AVALON_PIO_DATA(COS_HW_BASE);
+  printf("%f\n", x.f);
+  x.u = IORD_ALTERA_AVALON_PIO_DATA(TAN_HW_BASE);
+  printf("%f", x.f);
+
+  return 0;
+}

@@ -1,0 +1,11 @@
+	component firmware is
+		port (
+			clk_clk          : in  std_logic                     := 'X'; -- clk
+			cos_out_readdata : out std_logic_vector(31 downto 0);        -- readdata
+			pio_out_export   : out std_logic_vector(31 downto 0);        -- export
+			reset_reset_n    : in  std_logic                     := 'X'; -- reset_n
+			sin_out_readdata : out std_logic_vector(31 downto 0);        -- readdata
+			tan_out_readdata : out std_logic_vector(31 downto 0)         -- readdata
+		);
+	end component firmware;
+

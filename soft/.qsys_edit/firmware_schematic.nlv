@@ -1,0 +1,26 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst firmware.clk_0 -pg 1 -lvl 1 -y 40
+preplace inst firmware.PIO -pg 1 -lvl 3 -y 310
+preplace inst firmware.SIN_HW -pg 1 -lvl 3 -y 410
+preplace inst firmware.TAN_HW -pg 1 -lvl 3 -y 510
+preplace inst firmware.CPU.reset_bridge -pg 1
+preplace inst firmware.CPU.cpu -pg 1
+preplace inst firmware.COS_HW -pg 1 -lvl 3 -y 610
+preplace inst firmware.CPU -pg 1 -lvl 2 -y 100
+preplace inst firmware.jtag_uart_0 -pg 1 -lvl 3 -y 110
+preplace inst firmware.MEMORY -pg 1 -lvl 3 -y 30
+preplace inst firmware.CPU.clock_bridge -pg 1
+preplace inst firmware -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>firmware</net_container>(SLAVE)firmware.pio_out,(SLAVE)PIO.external_connection) 1 0 3 NJ 340 NJ 340 NJ
+preplace netloc FAN_OUT<net_container>firmware</net_container>(SLAVE)CPU.reset,(SLAVE)SIN_HW.reset,(SLAVE)COS_HW.reset,(SLAVE)jtag_uart_0.reset,(SLAVE)PIO.reset,(MASTER)clk_0.clk_reset,(SLAVE)TAN_HW.reset,(SLAVE)MEMORY.reset1) 1 1 2 290 60 710
+preplace netloc EXPORT<net_container>firmware</net_container>(SLAVE)firmware.tan_out,(SLAVE)TAN_HW.conduit_end) 1 0 3 NJ 560 NJ 560 NJ
+preplace netloc FAN_OUT<net_container>firmware</net_container>(MASTER)clk_0.clk,(SLAVE)PIO.clk,(SLAVE)CPU.clk,(SLAVE)SIN_HW.clock,(SLAVE)COS_HW.clock,(SLAVE)MEMORY.clk1,(SLAVE)jtag_uart_0.clk,(SLAVE)TAN_HW.clock) 1 1 2 270 40 730
+preplace netloc INTERCONNECT<net_container>firmware</net_container>(SLAVE)SIN_HW.avalon_slave_0,(MASTER)CPU.data_master,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)COS_HW.avalon_slave_0,(SLAVE)PIO.s1,(SLAVE)CPU.debug_mem_slave,(MASTER)CPU.instruction_master,(SLAVE)TAN_HW.avalon_slave_0,(SLAVE)MEMORY.s1) 1 1 2 310 240 670
+preplace netloc EXPORT<net_container>firmware</net_container>(SLAVE)firmware.sin_out,(SLAVE)SIN_HW.conduit_end) 1 0 3 NJ 460 NJ 460 NJ
+preplace netloc EXPORT<net_container>firmware</net_container>(SLAVE)firmware.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>firmware</net_container>(SLAVE)clk_0.clk_in,(SLAVE)firmware.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>firmware</net_container>(SLAVE)COS_HW.conduit_end,(SLAVE)firmware.cos_out) 1 0 3 NJ 660 NJ 660 NJ
+preplace netloc POINT_TO_POINT<net_container>firmware</net_container>(MASTER)CPU.irq,(SLAVE)jtag_uart_0.irq) 1 2 1 690
+levelinfo -pg 1 0 60 930
+levelinfo -hier firmware 70 100 430 770 920
